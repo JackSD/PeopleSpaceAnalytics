@@ -10,6 +10,6 @@ The solution proposed in this project to this expensive and biased process is to
 
 This repo is a Flask based web application (screenshot below) whcih interprets the data collected through the edge based device.
 
-!(https://github.com/JackSD/PeopleSpaceAnalytics/blob/master/readme/screenshot.png)
+![screenshot](https://github.com/JackSD/PeopleSpaceAnalytics/blob/master/readme/screenshot.png)
 
 
