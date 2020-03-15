@@ -8,6 +8,8 @@ The specific questions architects seek to answer about spaces concern how human 
 
 The solution proposed in this project to this expensive and biased process is to deploy a lightweight edge-based AI device. It requires mobility of the device so it can be placed anywhere, to be able to understand human movement in plan and section, and to protect the privacy of those involved. 
 
+![architecture](https://github.com/JackSD/PeopleSpaceAnalytics/blob/master/readme/architecture.png)
+
 This repo is a Flask based web application (screenshot below) whcih interprets the data collected through the edge based device.
 
 ![screenshot](https://github.com/JackSD/PeopleSpaceAnalytics/blob/master/readme/screenshot.png)
