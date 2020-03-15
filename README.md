@@ -14,4 +14,4 @@ This repo is a Flask based web application (screenshot below) whcih interprets t
 
 ![screenshot](https://github.com/JackSD/PeopleSpaceAnalytics/blob/master/readme/screenshot.png)
 
-
+note: although it is not clear, the bounding boxes are drawn on the bottom left image, as a visualization of space usage
