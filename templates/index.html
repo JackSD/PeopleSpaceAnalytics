@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Space Analytics Dashboard</title>
+       <meta http-equiv="refresh" content="3" />
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <header>
+      <h2>Smart Cities : Space Analytics</h2>
+    </header>
+    <table height="150px", width="100%" background="images/header1.jpg">
+        <tbody>
+            <tr>
+                <td width="400px">
+                    <div class="chart" id="bargraph2">
+                    </div>
+                </td>
+                <td width="400px">
+                    <div class="chart" id="bargraph3">
+                    </div>
+                </td>
+                <td width="400px">
+                    <div class="chart" id="bargraph">
+                    </div>
+                </td>
+                 <td width="400px">
+                    <div class="chart" id="dowgraph">
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+    </table>
+     <table height="230px", width="100%" background="images/header1.jpg">
+        <tbody>
+            <tr>
+                <td>
+                    <div>
+                      <h3>Raw Space Usage Data</h3>
+                    </div>
+                     <img src='/static/streetview2.jpg' width="700px"  height="400px"  />
+                </td>
+                <td>
+                    <div>
+                      <h3>Plan of Space</h3>
+                    </div>
+                    <img src='/static/plan_view2.JPG' width="700px"  height="400px"  />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        var graphs = {{plot | safe}};
+        Plotly.plot('bargraph',graphs,{});
+        var graph1 = {{ts_plot | safe}};
+         Plotly.plot('bargraph2',graph1,{});
+        var graph2 = {{monthly_plot | safe}};
+         Plotly.plot('bargraph3',graph2,{});
+          var graph3 = {{dowplot | safe}};
+         Plotly.plot('dowgraph',graph3,{});
+    </script>
+  </body>
+</html>
